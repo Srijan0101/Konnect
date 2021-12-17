@@ -11,7 +11,7 @@ const peer = new Peer(undefined, {
 const peers = {};
 navigator.mediaDevices.getUserMedia({ // access media from chrome(this is a promise)
     video: true,
-    audio: false
+    audio: true
 }).then(stream => {
     myVideoStream = stream;
     addVideoStream(myVideo, stream);
